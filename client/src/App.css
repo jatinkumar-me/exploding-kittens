@@ -6,7 +6,7 @@
 }
 
 .app-playfield {
-	padding: 0 2rem;
+	padding: 0 1rem;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: flex-start;
