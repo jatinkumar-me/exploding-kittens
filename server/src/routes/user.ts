@@ -1,6 +1,5 @@
 import express, { Request, Response } from "express";
 import userRepository from "../models/User";
-import redisClient from "../redisClient";
 
 const router = express.Router();
 

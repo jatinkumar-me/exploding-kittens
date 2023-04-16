@@ -23,6 +23,7 @@ const userSlice = createSlice({
 
 export const { incrementNoOfGamesPlayed, incrementScore, changeUser } =
 	userSlice.actions;
+	
 export default userSlice.reducer;
 export const selectCurrentUser = (state) => state.user.username;
 export const selectCurrentScore = (state) => state.user.score;
