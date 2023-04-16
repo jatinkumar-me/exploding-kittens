@@ -1,0 +1,39 @@
+{
+  "name": "exploding-kittens-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start:dev": "nodemon",
+    "build": "npm install && rimraf ./build && tsc",
+    "start": "node build/index.js "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.0",
+    "@types/cors": "^2.8.13",
+    "@types/express": "^4.17.14",
+    "@types/morgan": "^1.9.4",
+    "@types/node": "^18.11.9",
+    "nodemon": "^2.0.20",
+    "rimraf": "^3.0.2",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "brcypt": "^1.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "helmet": "^6.1.5",
+    "morgan": "^1.10.0",
+    "node-fetch": "^3.2.10",
+    "redis": "^4.6.5",
+    "redis-om": "^0.3.6"
+  }
+}

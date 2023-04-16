@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@100;400;700&display=swap");
+
+* {
+	font-family: "Chivo Mono", monospace;
+	margin: 0;
+}
+
+.app-playfield {
+	padding: 0 2rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	gap: 1rem;
+}
+
+@media screen and (max-width: 960px) {
+	.app-playfield {
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+	}
+}
+
+.game {
+	margin: auto;
+	flex-grow: 5;
+	max-width: 50rem;
+}
+
+.navbar {
+	padding: 1rem 2rem;
+	margin-bottom: 1rem;
+	background-color: #ffd102;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 1rem;
+}
+
+.deck {
+	width: 100%;
+	margin-bottom: 1rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	border-radius: 2rem;
+	min-height: 50vh;
+	max-height: 100%;
+	background-color: rgb(253, 246, 233);
+}
+
+/* .hidden:hover{
+  transform: scale(1.1);
+} */
+
+.card {
+	cursor: grab;
+	width: 7rem;
+	height: 10rem;
+	margin: 1rem;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	background-color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	backface-visibility: hidden;
+	transform-style: preserve-3d;
+	transition: transform 0.3s ease-in-out;
+}
+
+.cardContent {
+	font-size: xx-large;
+}
+
+.card.notHidden {
+	transform: rotateY(-360deg);
+}
+
+.inventory {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	gap: 0.5rem;
+}
+
+#leaderboard {
+	border-collapse: collapse;
+	/* width: 100%; */
+}
+
+#leaderboard td,
+#leaderboard th {
+	/* border: 1px solid #83750b; */
+	padding: 8px;
+}
+
+#leaderboard tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
+
+#leaderboard tr:hover {
+	background-color: #ddd;
+}
+
+#leaderboard th {
+	text-align: left;
+	background-color: #ffd102;
+	color: rgb(99, 76, 2);
+}
+
+#leaderboard th:first-of-type {
+	border-top-left-radius: 10px;
+}
+#leaderboard th:last-of-type {
+	border-top-right-radius: 10px;
+}
+
+#leaderboard tr:last-of-type td:first-of-type {
+	border-bottom-left-radius: 10px;
+}
+
+#leaderboard tr:last-of-type td:last-of-type {
+	border-bottom-right-radius: 10px;
+}
+
+.gameStatusMessage {
+	margin: auto;
+	max-width: 15rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.statusText {
+	text-align: center;
+}
+.statusButtons {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	padding: 0.7rem;
+	justify-content: center;
+	gap: 2rem;
+}
+
+.statusButtons button {
+	font-size: large;
+	border-radius: 100rem;
+	background-color: #ffd102;
+	padding: 0.5rem;
+}
+
+.topBar {
+	margin-bottom: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 5rem;
+}
+
+.currentScore {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	gap: 0.3rem;
+}
+
+.formLabel {
+	font-size: small;
+}
+.formInput {
+	display: flex;
+	gap: 0.3rem;
+}
