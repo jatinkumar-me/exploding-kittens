@@ -149,6 +149,7 @@
 
 .statusButtons button {
 	font-size: large;
+	cursor: pointer;
 	border-radius: 100rem;
 	background-color: #ffd102;
 	padding: 0.5rem;
