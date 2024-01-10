@@ -3,6 +3,8 @@
 </h1>
 <p align="center"> A web-based card game</p>
 
+# Warning: Backend-down, scores won't be saved.
+
 ## Instructions for running the game locally
 
 1. `cd` into your downloads directory where `exploding-kittens.tar.gz` is located.
