@@ -1,5 +1,5 @@
 <h1 align="center">
-   Exploding Kittens😸
+   Exploding Kittens :cat:
 </h1>
 <p align="center"> A web-based card game</p>
 
@@ -69,10 +69,10 @@ cd exploding-kittens
 
 The game deck consists of 4 different types of cards
 
-- Cat card 😼
-- Defuse card 🙅‍♂️
-- Shuffle card 🔀
-- Exploding kitten card 💣
+- Cat card :cat:
+- Defuse card :no_good:
+- Shuffle card :twisted_rightwards_arrows:
+- Exploding kitten card :bomb:
 
 When the game is started there will be a deck of 5 cards ordered randomly. Each time user clicks on the deck a card is revealed and that card is removed from the deck. A player wins the game once he draws all 5 cards from the deck and there is no card left to draw.
 
